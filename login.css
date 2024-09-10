@@ -1,0 +1,174 @@
+
+.arm {
+    display: none; /* Initially hide arms */
+    position: absolute;
+    width: 100px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    transition: transform 0.8s ease;
+    z-index: 4; /* Ensure arms are above the student image */
+}
+
+#left-arm {
+    left: -90px;
+    top: -12px;
+}
+#right-arm {
+    right: 0; /* Temporarily set to 0 to check visibility */
+    top: -12px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #20374d; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 1em 1em; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.1em; /* Space between logo and text */
+}
+
+.logo {
+    width: 120px; /* Adjust size as needed */
+    height: 115px; /* Adjust size as needed */
+    margin-right: 3px; /* Space between logo and AMS text */
+}
+
+.ams {
+   
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.5em; /* Size of AMS text */
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 4em); /* Adjust height to account for header */
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8fb; /* Background color for the left side */
+    padding: 80px;
+}
+
+/* Right Side Styles */
+.right-side {
+    flex: 1;
+    background-color: #f0f8fb; /* Background color for right side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-img {
+    position: relative; /* Allows positioning adjustments */
+    top: -30px; /* Move the image up */
+    left: -67px;
+    width: 89%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styles */
+.form-container {
+    position: relative; /* Relative for positioning the circle above */
+    width: 250px; /* Set the width of the rectangle */
+    padding: 2em;
+    background-color: rgb(175, 219, 255);
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around the rectangle */
+    margin-top: 5em; /* Add some space at the top for the circle */
+    text-align: center; /* Center the form content */
+  
+}
+
+.student-container {
+    position: absolute; /* Ensure it's positioned absolutely relative to its container */
+    top: -135px; /* Adjust the vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensure child elements are clipped to the circle */
+    border: 4px solid #333; /* Thin border around the circle */
+    background-color: rgb(175, 219, 255); /* Background color inside the circle */
+    z-index: 3; /* Ensure it's above other elements */
+ 
+}
+
+.student-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+    border-color: #4eb8dd;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    background-color: #387ab8;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2d3385;
+}
+
+.select-group {
+    margin-bottom: 1em;
+}
+
+select {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.inputGroup {
+    margin-bottom: 1.5em; /* Adjust space between input fields */
+}
