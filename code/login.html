@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="images/logo.gif" alt="Logo" class="logo">
+            <span class="ams">ATTENDANCE MANAGEMENT SYSTEM</span>
+        </div>
+       
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="form-container">
+                <div class="student-container">
+                    <img id="student-img" src="images/neutral.png" alt="Student">
+                    <img id="left-arm" src="images/left-arm.png" alt="Left Arm" class="arm">
+                    <img id="right-arm" src="images/right-arm.png" alt="Right Arm" class="arm">
+                </div>
+                <form>
+                    <div class="inputGroup">
+                        <label for="user-type"><b>User Type</b></label>
+                        <select id="user-type" name="user-type">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="email"><b>Username</b></label>
+                        <input type="text" id="email" name="email" placeholder="Enter username">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" id="password" name="password" placeholder="Enter password">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="images/login_bg.png" alt="Right Side Image" class="right-img">
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
