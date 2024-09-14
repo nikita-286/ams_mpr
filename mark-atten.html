@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="mark-atten.css">
+    <link rel="stylesheet" href="mark-view.css">
+    <script src="mark-atten.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="1-removebg-preview-3.png" alt="Logo" class="logo">
+            <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item">Home</div>
+            <div class="sidebar-item">Dashboard</div>
+            <div class="sidebar-item">Attendance</div>
+            <div class="sidebar-item">Reports</div>
+            <div class="sidebar-item">Settings</div>
+            <div class="sidebar-item">Help</div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <img src="neutral.png" alt="Attendance Logo" class="center-image">
+
+            <div class="content-box">
+                <h2>Mark Attendance</h2>
+                <form id="attendance-form">
+                    <div class="form-group">
+                        <label for="attendance-type">Select Attendance Type:</label>
+                        <select id="attendance-type" name="attendance-type" required>
+                            <option value="initially-all-present">Initially All Present</option>
+                            <option value="initially-all-absent">Initially All Absent</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="action-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

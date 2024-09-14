@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="view-attendance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="view-attendance.js" defer></script>
+</head>
+<body>
+        <header>
+            <div class="logo-container">
+                <img src="1-removebg-preview-3.png" alt="Logo" class="logo">
+                <div class="title">ATTENDANCE MANAGEMENT SYSTEM</div>
+            </div>
+        </header>
+        
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item"><a href="index.html">Home</a></div>
+            <div class="sidebar-item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="sidebar-item"><a href="mark-view.html">Attendance</a></div>
+            <div class="sidebar-item"><a href="reports.html">Reports</a></div>
+            <div class="sidebar-item"><a href="settings.html">Settings</a></div>
+            <div class="sidebar-item"><a href="help.html">Help</a></div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <h2>Student Attendance</h2>
+
+            <!-- Table for student attendance -->
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>IP</th>
+                        <th>CNS</th>
+                        <th>SE</th>
+                        <th>ADSA</th>
+                        <th>EEB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>85%</td>
+                        <td>75%</td>
+                        <td>90%</td>
+                        <td>80%</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>80%</td>
+                        <td>85%</td>
+                        <td>88%</td>
+                        <td>70%</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>90%</td>
+                        <td>80%</td>
+                        <td>85%</td>
+                        <td>90%</td>
+                        <td>80%</td>
+                    </tr>
+                    <!-- Add more student rows as needed -->
+                </tbody>
+            </table>
+
+            <!-- Bar Graph -->
+            <div class="canvas-container">
+                <canvas id="attendanceChart" width="600" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

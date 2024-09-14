@@ -1,0 +1,107 @@
+/* view-attendance.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8fb;
+}
+
+/* Header styles */
+header {
+    background-color: #20374d;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.title {
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px); /* Adjust for header height */
+}
+
+.sidebar {
+    background-color: rgb(173, 208, 236);
+    width: 16%;
+    border: 2px solid rgb(128, 164, 220); /* Purple border */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px; /* Unified padding */
+    margin-top: 2px; /* Gap at the top */
+    margin-left: 2px; /* Gap on the left */
+}
+
+.sidebar-item {
+    height: 40px;
+    background-color: #387ab8; 
+    border: 2px solid rgb(53, 93, 157); /* Border */
+    margin-bottom: 26px; /* Adjust margin between buttons */
+    width: 100%; /* Make the button stretch to fill the sidebar */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.attendance-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #20374d;
+    color: white;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.attendance-table tr:hover {
+    background-color: #ddd;
+}
+
+.canvas-container {
+    width: 100%;
+    max-width: 800px;
+}
