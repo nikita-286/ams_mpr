@@ -1,0 +1,142 @@
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8fb;
+}
+
+/* Header styles */
+header {
+    background-color: #20374d;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+header .logo {
+    margin-right: 5px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.1em;
+}
+
+.logo {
+    width: 120px;
+    height: 115px;
+    margin-right: 3px;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: rgb(173, 208, 236);
+    width: 16%;
+    border: 2px solid rgb(128, 164, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.sidebar-item {
+    height: 40px;
+    background-color: #387ab8;
+    border: 2px solid rgb(53, 93, 157);
+    margin-bottom: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+    background-color: #305d9a;
+}
+
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    padding-top: 20px; /* Adjust if needed */
+}
+
+/* Box styles */
+.content-box {
+    background-color: rgb(175, 219, 255);
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+    margin-top: 0; /* Ensure there is no margin above the box */
+}
+
+/* Styles for the centered image */
+.center-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-bottom: 0; /* Remove margin to ensure the image touches the box */
+}
+
+
+/* Button styles */
+.action-button {
+    width: 200px;
+    height: 50px;
+    background-color: #20374d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.action-button:hover {
+    transform: translateY(-5px);
+    background-color: #1a2f3d;
+}
+
+.action-button:active {
+    transform: translateY(2px);
+}
+
+/* Animation for box fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
