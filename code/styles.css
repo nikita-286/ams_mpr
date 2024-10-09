@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8fb;
+}
+
+/* Header styles */
+header {
+    background-color: #20374d;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.1em; /* Space between logo and text */
+}
+
+.logo {
+    width: 120px; /* Adjust size as needed */
+    height: 115px; /* Adjust size as needed */
+    margin-right: 3px; /* Space between logo and AMS text */
+}
+
+
+header .logo {
+    margin-right: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    background-color:rgb(175, 219, 255) ;
+}
+
+button.mark-present {
+    background-color: green;
+    color: white;
+}
+
+button.mark-absent {
+    background-color: red;
+    color: white;
+}
+
+button.selected {
+    filter: brightness(70%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#submitAttendance {
+    background-color: #387ab8;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#submitAttendance:hover {
+    background-color: #2d3385;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
